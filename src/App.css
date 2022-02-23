@@ -1,38 +1,60 @@
-.App {
+.App{
   text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table{
+  width: 100%;
+  background-color: blanchedalmond;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+td,tr{
+  background-color: rgb(255, 255, 255);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.flex-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.account-summary{
+width: 30%;
+text-align: center;
+padding: 0%;
+margin: 0% auto;
+line-height: 0.2;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.summary-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.summary-footer{
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid black;
+}
+.summary-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+.summary-item span{
+  background-color: black;
+  width: min(8%);
+}
+.income-form{
+  text-align: center;
+}
+.split{
+  display: flex;
+  justify-content: space-evenly;
+}
+.account-pie{
+  width: 25%;
+  padding: 1%;
+  border: solid rgb(179, 179, 179) 2px;
 }
